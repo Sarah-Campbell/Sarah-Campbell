@@ -1,40 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  </head>
-  <body>
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading">Sarah Campbell</h1>
-        <p class="lead text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      </div>
-    </section>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-              <img class="img-fluid" src="img/clean-kindle_1.jpg">
-          </div>
-          <div class="col-md-4">
-                <img class="img-fluid" src="img/clean-kotex_1.jpg">
-          </div>
-          <div class="col-md-4">
-              <img class="img-fluid" src="img/clean-mec_1.jpg">
-          </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .parallax-window {
+            min-height: 600px;
+            background: transparent;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .separator-container {
+            text-align: center;
+            position: relative;
+        }
+
+        .separator-container .separator {
+            color: #c5a47e;
+            margin: 0 auto 1em;
+            width: 11em;
+        }
+
+        .separator-container .separator.line-separator:before, .separator-container .separator.line-separator:after {
+            display: block;
+            width: 40%;
+            content: " ";
+            margin-top: 14px;
+            border: 1px solid #c5a47e;
+        }
+
+        .separator-container .separator.line-separator:before {
+            float: left;
+        }
+
+        .separator-container .separator.line-separator:after {
+            float: right;
+        }
+
+        .card {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/masthead.jpg" data-natural-width="960" data-natural-height="540"></div>
+
+<section>
+    <div class="container py-5">
+        <div class="title mb-5">
+            <h2>Mock Cases</h2>
+            <div class="separator-container">
+                <div class="separator line-separator">∎</div>
+            </div>
+            <p class="lead">
+                An exercise in creativity and idea generation. I created a series of marketing cases by selecting and
+                researching a brand, creating a strategy, some mock copy, and a quick sketch for various on and offline
+                mediums.
+            </p>
         </div>
-      </div>
-    </section>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/clean-kindle_1.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">Kindle</h4>
+                        <p class="card-text">A friendly, bookish brand sparking passion and accessibility “for the love
+                            of reading”</p>
+                        <a href="#" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/clean-mec_1.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">MEC</h4>
+                        <p class="card-text">A nature loving brand looking to inspire and lead its city dwelling members
+                            outdoors</p>
+                        <a href="#" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/clean-kotex_1.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">U by Kotex</h4>
+                        <p class="card-text">A spunky, bold and colourful brand that tells it like it is</p>
+                        <a href="#" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/banana-tic-tacs.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">Tic Tacs</h4>
+                        <p class="card-text">A playful, optimistic and engaging brand that creates little moments of
+                            fun</p>
+                        <a href="#" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" style="padding-top: 5rem">
+                <blockquote class="blockquote blockquote-reverse">
+                    <p class="mb-0">
+                        <i class="fa fa-quote-left fa-2x"></i> No one ever discovered anything new ​by colouring in the lines
+                    </p>
+                    <footer class="blockquote-footer">
+                         <cite>Someone famous</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: #DBEAF5">
+    <div class="container py-5">
+        <div class="title mb-5">
+            <h2>First Place Winner
+            </h2>
+            <div class="separator-container">
+                <div class="separator line-separator">∎</div>
+            </div>
+            <p class="lead">
+                First place winner of a marketing case competition for Zip Car’s move into Calgary, hosted by the SFU
+                Student Marketing Association in partnership with Red the Agency. After a thirteen hour work day we
+                presented the following 3 marketing strategy proposals to a panel of judges and executives to take the
+                gold.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/zipcar-1.jpg">
+                    <div class="card-block">
+                        <h5 class="card-title">No Sweat Maintenance</h5>
+                        <p class="card-text">
+                            A marketing series focusing on Social Media and University advertising. Highlights the ease
+                            and inexpense of maintenance and winter driving with Zip Car.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/zipcar-2.jpg">
+                    <div class="card-block">
+                        <h5 class="card-title">Take Your Pick &amp; Drive in Style</h5>
+                        <p class="card-text">
+                            A marketing series focusing on the Calgary Stampede, and Social Media Advertising.
+                            Highlights the Prarie identity, and the social and status identification of driving luxury
+                            cars and pick-up trucks. Underlines the economic benefit of paying less, while still driving
+                            a nicer car.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="img-fluid" src="img/zipcar-3.jpg">
+                    <div class="card-block">
+                        <h5 class="card-title">Cars That Adjust To Your Lifestyle</h5>
+                        <p class="card-text">
+                            A marketing series which ties together the first two ideas and expands upon them. Focuses on
+                            key 'Yuppie' demgraphic, launches at Calgary Folk Music festival, and advertises at the
+                            Universities, and at the malls. Focuses on living the Zip Car lifestyle, easier to shop,
+                            attend festivals and events, and go out with friends in luxury.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>2016 SMAck Down Marketing Competition</p>
+    </div>
+</section>
+
+<section>
+    <div class="container py-5">
+        <div class="title mb-5">
+            <h2>About Me</h2>
+            <div class="separator-container">
+                <div class="separator line-separator">∎</div>
+            </div>
+            <p class="lead">
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/coffee-drinker.jpg">
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote blockquote-reverse">
+                    <p class="mb-0">
+                        <i class="fa fa-quote-left fa-2x"></i> I am an insatiable coffee drinker and travel lover, who has
+                        fallen in love with the process of coming up with ideas. Writing, developing and creating are my
+                        life, extreme organization is just my fun quirk.</p>
+                    <footer class="blockquote-footer">
+                        <cite>Sarah Campbell</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="js/parallax.min.js"></script>
+<script>
+    $('[data-parallax="scroll"]').each(function() {
+        var $this = $(this);
+        $this.parallax({imageSrc: $this.data('image-src') });
+    });
+</script>
+</body>
 </html>
