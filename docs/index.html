@@ -33,18 +33,24 @@
             padding: 8rem;
         }
 
-        .tinted-image {
-            background: linear-gradient(rgba(159, 97, 138, 0.45), rgba(159, 97, 138, 0.45)),
-            url(img/header.jpg);
+        .tint::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(rgba(189, 155, 192, 0.45), rgba(189, 155, 192, 0.45));
         }
     </style>
 </head>
 <body>
 
 <section class="header">
-    <div class="container">
-        <!--<div class="tinted-image" style="height: 600px;"></div>-->
-        <img class="img-fluid" src="img/header.jpg">
+    <div class="container d-relative">
+        <div class="row tint">
+            <img class="img-fluid" src="img/header.jpg">
+        </div>
     </div>
 </section>
 
@@ -111,7 +117,7 @@
                         No one ever discovered anything new ​by colouring in the lines
                     </p>
                     <footer class="blockquote-footer">
-                        <cite>Someone famous</cite>
+                        <cite>Thomas Vasquez</cite>
                     </footer>
                 </blockquote>
             </div>
@@ -121,12 +127,12 @@
 
 <section class="first-place">
     <div class="container">
-        <h2>First Place Winner <sup><i class="fa fa-asterisk"></i></sup></h2>
+        <h2>First Place Winner</h2>
         <p class="lead mb-5">
-            First place winner of a marketing case competition for Zip Car’s move into Calgary, hosted by the SFU
-            Student Marketing Association in partnership with Red the Agency. After a thirteen hour work day we
-            presented the following 3 marketing strategy proposals to a panel of judges and executives to take the
-            gold.
+            First place winner of the 2016 SMAck Down marketing case competition focusing on Zip Car’s move into
+            Calgary, and hosted by the SFU Student Marketing Association in partnership with Red the Agency. After a
+            thirteen hour work day we presented the following three marketing strategy proposals to a panel of judges
+            and executives to take the gold.
         </p>
 
         <div class="row">
@@ -169,14 +175,16 @@
                 </div>
             </div>
         </div>
-
-        <small><i class="fa fa-asterisk"></i> 2016 SMAck Down Marketing Competition</small>
     </div>
 </section>
 
 <section>
     <div class="container">
-        <h2 class="mb-5">#VolunteersofSFU</h2>
+        <h2>#VolunteersofSFU</h2>
+        <p class="lead mb-5">
+            A successful and engaging student campaign I imagined, developed, and implemented campus-wide for Simon
+            Fraser University’s Career and Volunteer Services Department.
+        </p>
 
         <div class="row">
             <div class="col-md-6">
@@ -191,9 +199,10 @@
                 </p>
 
                 <p>
-                    The official launch of this project was featured on Facebook, Social Media, The Peak Newspaper,
-                    several Volunteer Events, and a guerilla postering and sign creation campaign, culminating in the
-                    launch event which occurred May 17, 18, on SFU Burnaby campus, and 19, on SFU Surrey campus 2016.
+                    The official launch of this project was featured on Facebook, Social Media, and The Peak Newspaper,
+                    in several Volunteer Events, and through a guerrilla ‘interruption’ poster and sign campaign. All of
+                    this culminated in the launch event, which occurred May 17th and 18th on SFU Burnaby campus, and on
+                    SFU Surrey campus May 19th 2016.
                 </p>
             </div>
 

@@ -21,11 +21,6 @@ body {
     border: none;
 }
 
-sup {
-    vertical-align: super;
-    font-size: 50%;
-}
-
 .coffee {
     margin-top: 5rem;
     opacity: .1;
