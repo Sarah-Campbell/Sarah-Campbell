@@ -10,78 +10,57 @@
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
 
     <style>
-        .parallax-window {
-            min-height: 600px;
-            background: transparent;
+        .header {
+            background-color: rgba(159, 97, 138, 0.45);
+            margin-bottom: 8rem;
         }
 
-        .title {
-            text-align: center;
+        .first-place {
+            background-color: rgba(48, 108, 168, 0.45);
+            margin: 8em 0;
+            padding: 8em 0;
         }
 
-        .separator-container {
-            text-align: center;
-            position: relative;
+        .footer {
+            background-color: rgba(115, 94, 77, 0.45);
+            margin-top: 8rem;
+            padding: 8rem;
         }
 
-        .separator-container .separator {
-            color: #c5a47e;
-            margin: 0 auto 1em;
-            width: 11em;
-        }
-
-        .separator-container .separator.line-separator:before, .separator-container .separator.line-separator:after {
-            display: block;
-            width: 40%;
-            content: " ";
-            margin-top: 14px;
-            border: 1px solid #c5a47e;
-        }
-
-        .separator-container .separator.line-separator:before {
-            float: left;
-        }
-
-        .separator-container .separator.line-separator:after {
-            float: right;
-        }
-
-        .card {
-            margin-bottom: 2rem;
+        .tinted-image {
+            background: linear-gradient(rgba(159, 97, 138, 0.45), rgba(159, 97, 138, 0.45)),
+            url(img/header.jpg);
         }
     </style>
 </head>
 <body>
 
+<section class="header">
+    <div class="container">
+        <div class="tinted-image" style="height: 600px;"></div>
+    </div>
+</section>
+
 <section>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-12">
-                <img class="img-fluid" src="img/header.jpg" style="width:100%">
-            </div>
-        </div>
+    <div class="container">
+        <h2>Mock Cases</h2>
+        <p class="lead mb-5">
+            An exercise in creativity and idea generation. I created a series of marketing cases by selecting and
+            researching a brand, creating a strategy, some mock copy, and a quick sketch for various on and offline
+            mediums.
+        </p>
 
-        <div class="title mb-5">
-            <h2>Mock Cases</h2>
-            <div class="separator-container">
-                <div class="separator line-separator">∎</div>
-            </div>
-            <p class="lead">
-                An exercise in creativity and idea generation. I created a series of marketing cases by selecting and
-                researching a brand, creating a strategy, some mock copy, and a quick sketch for various on and offline
-                mediums.
-            </p>
-        </div>
-
-        <div class="row mb-5">
+        <div class="row mb-3">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/purple-kindle.jpg">
+                    <img class="card-img-top img-fluid" src="img/kindle.jpg">
                     <div class="card-block">
                         <h4 class="card-title">Kindle</h4>
-                        <p class="card-text">A friendly, bookish brand sparking passion and accessibility “for the love
+                        <p class="card-text">A friendly, bookish brand sparking passion and accessibility “for the
+                            love
                             of reading”.</p>
                         <a href="kindle.html" class="card-link">More</a>
                     </div>
@@ -89,10 +68,10 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/purple-mec.jpg">
+                    <img class="card-img-top img-fluid" src="img/mec.jpg">
                     <div class="card-block">
                         <h4 class="card-title">MEC</h4>
-                        <p class="card-text">A nature loving brand looking to inspire and lead its city dwelling members
+                        <p class="card-text">A nature loving brand inspiring and leading its city dwelling members
                             outdoors.</p>
                         <a href="mec.html" class="card-link">More</a>
                     </div>
@@ -100,7 +79,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/purple-kotex.jpg">
+                    <img class="card-img-top img-fluid" src="img/kotex.jpg">
                     <div class="card-block">
                         <h4 class="card-title">U by Kotex</h4>
                         <p class="card-text">A spunky, bold and colourful brand that tells it like it is.</p>
@@ -108,9 +87,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/purple-tic-tacs.jpg">
+                    <img class="card-img-top img-fluid" src="img/tic-tacs.jpg">
                     <div class="card-block">
                         <h4 class="card-title">Tic Tacs</h4>
                         <p class="card-text">A playful, optimistic and engaging brand that creates little moments of
@@ -122,8 +104,7 @@
             <div class="col-md-8" style="padding-top: 5rem">
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0">
-                        <i class="fa fa-quote-left fa-2x"></i> No one ever discovered anything new ​by colouring in the
-                        lines
+                        No one ever discovered anything new ​by colouring in the lines
                     </p>
                     <footer class="blockquote-footer">
                         <cite>Someone famous</cite>
@@ -134,91 +115,122 @@
     </div>
 </section>
 
-<section style="background-color: #DBEAF5">
-    <div class="container py-5">
-        <div class="title mb-5">
-            <h2>First Place Winner
-            </h2>
-            <div class="separator-container">
-                <div class="separator line-separator">∎</div>
-            </div>
-            <p class="lead">
-                First place winner of a marketing case competition for Zip Car’s move into Calgary, hosted by the SFU
-                Student Marketing Association in partnership with Red the Agency. After a thirteen hour work day we
-                presented the following 3 marketing strategy proposals to a panel of judges and executives to take the
-                gold.
-            </p>
-        </div>
+<section class="first-place">
+    <div class="container">
+        <h2>First Place Winner <sup><i class="fa fa-asterisk"></i></sup></h2>
+        <p class="lead mb-5">
+            First place winner of a marketing case competition for Zip Car’s move into Calgary, hosted by the SFU
+            Student Marketing Association in partnership with Red the Agency. After a thirteen hour work day we
+            presented the following 3 marketing strategy proposals to a panel of judges and executives to take the
+            gold.
+        </p>
 
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/zipcar-1.jpg">
+                    <img class="card-img-top img-fluid" src="img/zipcar/1.jpg">
                     <div class="card-block">
                         <h5 class="card-title">No Sweat Maintenance</h5>
                         <p class="card-text">
-                            A marketing series focusing on Social Media and University advertising. Highlights the ease
-                            and inexpense of maintenance and winter driving with Zip Car.
+                            Highlighted the ease and low cost of maintenance and winter driving with Zip Car while
+                            focusing on Social Media and University advertising.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/zipcar-2.jpg">
+                    <img class="card-img-top img-fluid" src="img/zipcar/2.jpg">
                     <div class="card-block">
                         <h5 class="card-title">Take Your Pick &amp; Drive in Style</h5>
                         <p class="card-text">
-                            A marketing series focusing on the Calgary Stampede, and Social Media Advertising.
-                            Highlights the Prarie identity, and the social and status identification of driving luxury
-                            cars and pick-up trucks. Underlines the economic benefit of paying less, while still driving
-                            a nicer car.
+                            Using the ‘Prairie’ identity, the stampede and the status symbol tied to luxury cars and
+                            pick-up trucks, this underlined the economic benefits of paying less, while still driving a
+                            nice car.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/zipcar-3.jpg">
+                    <img class="card-img-top img-fluid" src="img/zipcar/3.jpg">
                     <div class="card-block">
                         <h5 class="card-title">Cars That Adjust To Your Lifestyle</h5>
                         <p class="card-text">
-                            A marketing series which ties together the first two ideas and expands upon them. Focuses on
-                            key 'Yuppie' demgraphic, launches at Calgary Folk Music festival, and advertises at the
-                            Universities, and at the malls. Focuses on living the Zip Car lifestyle, easier to shop,
-                            attend festivals and events, and go out with friends in luxury.
+                            Launched at Calgary Folk Music festival, with continuing advertising at Universities and
+                            malls, this strategy focused on the key 'Yuppie' demographic living the Zip Car lifestyle:
+                            shopping, attending events, and going out with friends.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <p>2016 SMAck Down Marketing Competition</p>
+        <small><i class="fa fa-asterisk"></i> 2016 SMAck Down Marketing Competition</small>
     </div>
 </section>
 
 <section>
-    <div class="container py-5">
-        <div class="title mb-5">
-            <h2>About Me</h2>
-            <div class="separator-container">
-                <div class="separator line-separator">∎</div>
-            </div>
-            <p class="lead">
-            </p>
-        </div>
+    <div class="container">
+        <h2 class="mb-5">#VolunteersofSFU</h2>
 
         <div class="row">
             <div class="col-md-6">
-                <img class="img-fluid" src="img/coffee-drinker.jpg">
+                <img class="img-fluid rounded mb-3" src="img/sfu/red-shirt.jpg">
+
+                <p>
+                    #VolunteersofSFU is a new dynamic social media campaign, inspired by the wildly popular Humans of
+                    New York Facebook Page, which is devoted to providing recognition and appreciation to the fantastic
+                    and dedicated volunteers of Simon Fraser University (SFU). Whether students are volunteering on or
+                    off campus, for a short period of time or a long period we want to recognize their contribution, and
+                    share their story with others.
+                </p>
+
+                <p>
+                    The official launch of this project was featured on Facebook, Social Media, The Peak Newspaper,
+                    several Volunteer Events, and a guerilla postering and sign creation campaign, culminating in the
+                    launch event which occurred May 17, 18, on SFU Burnaby campus, and 19, on SFU Surrey campus 2016.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid rounded" src="img/sfu/presidents.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid rounded" src="img/sfu/slogan.png">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <img class="img-fluid rounded" src="img/sfu/article.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid rounded" src="img/sfu/media-tweet.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <h2 class="mb-5">About Me</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid rounded" src="img/sarah/coffee-drinker.jpg">
             </div>
             <div class="col-md-6">
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0">
-                        <i class="fa fa-quote-left fa-2x"></i> I am an insatiable coffee drinker and travel lover, who
-                        has
-                        fallen in love with the process of coming up with ideas. Writing, developing and creating are my
-                        life, extreme organization is just my fun quirk.</p>
+                        I am an insatiable coffee drinker and travel lover, who has fallen in love with the process of
+                        coming up with ideas. Writing, developing and creating are my life, extreme organization is just
+                        my fun quirk.
+                    </p>
                     <footer class="blockquote-footer">
                         <cite>Sarah Campbell</cite>
                     </footer>
