@@ -14,23 +14,59 @@
     <link rel="stylesheet" href="css/app.css">
 
     <style>
-        .tinted-image {
-            background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
-            url(img/seamless-doodle-coffee-pattern.jpg);
-            height: 10rem;
-            padding: 1rem;
+        .header {
+            background-color: rgba(145, 167, 208, 0.45);
+            margin-bottom: 4rem;
+        }
+
+        .tint::before {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            bottom: 0;
+            left: 15px;
+            background-image: linear-gradient(rgba(145, 167, 208, 0.45), rgba(145, 167, 208, 0.45));
+            content: "";
+        }
+
+        .social-media {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: transparent;
+        }
+
+        .title {
+            position: absolute;
+            top: 30px;
+            left: -15px;
+        }
+
+        .title a {
+            color: #fff;
+            background-color: #000;
+            text-decoration: none;
+            padding: .25rem 2rem;
+        }
+
+        .title a:hover {
+            color: #999;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="row heading">
-        <div class="col-md-12">
-            <div class="tinted-image">
-                <h1><a href="index.html">Sarah Campbell</a></h1>
+<section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tint">
+                    <img class="img-fluid" src="img/header-small.jpg">
+                </div>
 
-                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Social Media Links">
+                <h1 class="title"><a href="index.html">Sarah Campbell</a></h1>
+
+                <div class="btn-toolbar social-media" role="toolbar" aria-label="Social Media Links">
                     <div class="btn-group" role="group">
                         <a class="btn btn-secondary" href="https://ca.linkedin.com/in/sarah-campbell-b9895081">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -42,11 +78,13 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
 
+    </div>
+</section>
+
+<div class="container">
     <div class="row my-3">
         <div class="col-md-12">
             <h2>Kindle</h2>
