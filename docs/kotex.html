@@ -14,41 +14,56 @@
     <link rel="stylesheet" href="css/app.css">
 
     <style>
-        .tinted-image {
-            background: linear-gradient(rgba(0, 255, 255, 0.45), rgba(0, 255, 255, 0.45)),
-            url(img/seamless-doodle-coffee-pattern.jpg);
-            height: 10rem;
-            padding: 1rem;
+        .masthead, .img-tint-color {
+            background-image: linear-gradient(rgba(195, 220, 214, .45), rgba(195, 220, 214, .45));
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="row heading">
-        <div class="col-md-12">
-            <div class="tinted-image">
-                <h1><a href="index.html">Sarah Campbell</a></h1>
+<section class="masthead">
+    <nav class="navbar navbar-toggleable navbar-inverse bg-inverse">
+        <div class="container">
+            <span class="navbar-brand h1"><a href="index.html">Sarah Campbell</a></span>
 
-                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Social Media Links">
-                    <div class="btn-group" role="group">
-                        <a class="btn btn-secondary" href="https://ca.linkedin.com/in/sarah-campbell-b9895081">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <a class="btn btn-secondary" href="mailto:sarahj.campb@gmail.com">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ca.linkedin.com/in/sarah-campbell-b9895081">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:sarahj.campb@gmail.com">Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="btn-toolbar hidden-sm-up" role="toolbar" aria-label="Social Media Links">
+            <a class="btn btn-secondary btn-sm mr-1" href="https://ca.linkedin.com/in/sarah-campbell-b9895081">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-secondary btn-sm" href="mailto:sarahj.campb@gmail.com">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class=tinted-image-container>
+            <div class=tinted-image-container>
+                <div class="img-tint img-tint-color"></div>
+                <img class="img-fluid hidden-md-up" src="img/subhead-sm.jpg">
+                <img class="img-fluid hidden-lg-up hidden-sm-down" src="img/subhead-md.jpg">
+                <img class="img-fluid hidden-xl-up hidden-md-down" src="img/subhead-lg.jpg">
+                <img class="img-fluid hidden-lg-down" src="img/subhead.jpg">
             </div>
         </div>
     </div>
+</section>
 
-    <div class="row my-3">
-        <div class="col-md-12">
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
             <h2>U by Kotex</h2>
 
             <blockquote class="blockquote">
@@ -60,7 +75,11 @@
     </div>
 
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-sm-12 col-md-6 push-md-6 mb-4">
+            <img class="img-fluid rounded" src="img/kotex.jpg">
+        </div>
+
+        <div class="col pull-md-6">
             <section>
                 <h4>Billboard</h4>
                 <p>
@@ -99,9 +118,6 @@
                     video would be published on Youtube and the website, and shared across social media.
                 </p>
             </section>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="img/kotex.jpg">
         </div>
     </div>
 
