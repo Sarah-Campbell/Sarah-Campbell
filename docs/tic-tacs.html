@@ -15,13 +15,21 @@
 
     <style>
         .masthead, .img-tint-color {
-            background-image: linear-gradient(rgba(227, 234, 165, .45), rgba(227, 234, 165, .45));
+            background-image: linear-gradient(rgba(167, 176, 173, .45), rgba(167, 176, 173, .45));
+        }
+
+        .puff-piece-image img {
+            border: 10px solid rgb(167, 176, 173);
+        }
+
+        .gray-hue {
+            background-color: rgb(167, 176, 173);
         }
     </style>
 </head>
 <body>
 
-<section class="masthead mb-4">
+<section class="masthead mb-5">
     <nav class="navbar navbar-toggleable navbar-inverse bg-inverse">
         <div class="container">
             <span class="navbar-brand h1"><a href="index.html">Sarah Campbell</a></span>
@@ -101,9 +109,51 @@
         </div>
     </div>
 
-    <div class="coffee"><i class="fa fa-coffee fa-2x"></i></div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 mb-3">
+            <img class="img-fluid rounded" src="img/bitmoji/1.jpg">
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <img class="img-fluid rounded" src="img/bitmoji/2.jpg">
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <img class="img-fluid rounded" src="img/bitmoji/3.jpg">
+        </div>
+    </div>
 </div>
 
+<section class="puff-piece color-section gray-hue">
+    <div class="container">
+        <div class="puff-piece-image">
+            <img class="img-fluid rounded-circle" src="img/coffee-icon-sm.png">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <ul class="social-media list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://ca.linkedin.com/in/sarah-campbell-b9895081">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/sarah_soup/">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:sarahj.campb@gmail.com">
+                            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"
