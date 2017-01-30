@@ -2,34 +2,17 @@ body {
     color: #222;
 }
 
-.heading h1 {
-    display: inline-block;
-    margin-left: -2rem;
-}
-
-.heading h1 a {
-    color: #fff;
-    background-color: #000;
+a:hover {
     text-decoration: none;
-    padding: .25rem 2rem;
-}
-
-.heading h1 a:hover {
-    color: #999;
 }
 
 .card {
     border: none;
+    margin-bottom: 1rem;
 }
 
-.coffee {
-    margin-top: 5rem;
-    opacity: .1;
-    text-align: center;
-}
-
-.masthead {
-    margin-bottom: 1.5rem;
+.blockquote {
+    border: 0;
 }
 
 .navbar-brand.h1 {
@@ -37,19 +20,23 @@ body {
     margin-bottom: 0;
 }
 
-.navbar-brand a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar-brand a:hover {
-    color: #999;
-}
-
 .navbar .btn-toolbar {
     position: absolute;
     top: 17px;
     right: 15px;
+}
+
+.navbar-brand a {
+    color: #fff;
+}
+
+.social-media a {
+    color: inherit;
+}
+
+.navbar-brand a:hover,
+.social-media a:hover {
+    color: #999;
 }
 
 .tinted-image-container {
@@ -62,6 +49,12 @@ body {
     bottom: 0;
     width: 100%;
     content: "";
+}
+
+.coffee {
+    margin-top: 5rem;
+    opacity: .1;
+    text-align: center;
 }
 
 @media (max-width: 575px) {

@@ -13,24 +13,58 @@
     <link rel="stylesheet" href="css/app.css">
 
     <style>
-        .masthead {
-            margin-bottom: 8rem;
-        }
-
         .masthead, .img-tint-color {
             background-image: linear-gradient(rgba(189, 155, 192, .45), rgba(189, 155, 192, .45));
         }
 
-        .first-place {
-            background-color: rgba(145, 167, 208, 0.45);
-            margin: 8em 0;
-            padding: 8em 0;
+        section {
+            margin-bottom: 4rem;
         }
 
-        .footer {
-            background-color: rgba(195, 221, 214, 0.45);
-            margin-top: 8rem;
-            padding: 8rem 0;
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        section .lead {
+            margin-bottom: 2.5rem;
+        }
+
+        .color-section {
+            padding: 4rem 0;
+        }
+
+        .color-section:last-of-type {
+            padding-top: 0;
+        }
+
+        .puff-piece {
+            margin-top: 16rem;
+            margin-bottom: 0;
+            padding-top: 12rem;
+            padding-bottom: 4rem;
+        }
+
+        .puff-piece-image {
+            position: absolute;
+            top: -18rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .puff-piece-image img {
+            border: 10px solid rgb(195, 221, 214);
+        }
+
+        .green-hue {
+            background-color: rgb(195, 221, 214);
+        }
+
+        .purple-tint {
+            color: rgba(189, 155, 192, .45);
+        }
+
+        .blue-tint {
+            background-color: rgba(145, 167, 208, .45);
         }
     </style>
 </head>
@@ -79,14 +113,14 @@
 <section>
     <div class="container">
         <h2>Mock Cases</h2>
-        <p class="lead mb-5">
+        <p class="lead">
             An exercise in creativity and idea generation. I created a series of marketing cases by selecting and
             researching a brand, creating a strategy, some mock copy, and a quick sketch for various on and offline
             mediums.
         </p>
 
-        <div class="row mb-3">
-            <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/kindle.jpg">
                     <div class="card-block">
@@ -98,7 +132,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/mec.jpg">
                     <div class="card-block">
@@ -110,7 +145,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/kotex.jpg">
                     <div class="card-block">
@@ -122,10 +158,8 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/tic-tacs.jpg">
                     <div class="card-block">
@@ -137,9 +171,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8" style="padding-top: 5rem">
+
+            <div class="col-lg-8 mt-5">
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0">
+                        <i class="fa fa-quote-left fa-3x purple-tint" aria-hidden="true"></i>
                         No one ever discovered anything new ​by colouring in the lines
                     </p>
                     <footer class="blockquote-footer">
@@ -151,10 +187,10 @@
     </div>
 </section>
 
-<section class="first-place">
+<section class="color-section blue-tint">
     <div class="container">
         <h2>First Place Winner</h2>
-        <p class="lead mb-5">
+        <p class="lead">
             First place winner of the 2016 SMAck Down marketing case competition focusing on Zip Car’s move into
             Calgary, and hosted by the SFU Student Marketing Association in partnership with Red the Agency. After a
             thirteen hour work day we presented the following three marketing strategy proposals to a panel of judges
@@ -162,7 +198,7 @@
         </p>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/zipcar/1.jpg">
                     <div class="card-block">
@@ -174,7 +210,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-lg">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/zipcar/2.jpg">
                     <div class="card-block">
@@ -187,7 +224,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-lg">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="img/zipcar/3.jpg">
                     <div class="card-block">
@@ -201,13 +239,14 @@
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 
 <section>
     <div class="container">
         <h2>#VolunteersofSFU</h2>
-        <p class="lead mb-5">
+        <p class="lead">
             A successful and engaging student campaign I imagined, developed, and implemented campus-wide for Simon
             Fraser University’s Career and Volunteer Services Department.
         </p>
@@ -230,23 +269,27 @@
                     this culminated in the launch event, which occurred May 17th and 18th on SFU Burnaby campus, and on
                     SFU Surrey campus May 19th 2016.
                 </p>
+
+                <p>
+                    <a href="https://www.sfu.ca/volunteer/volunteersofsfu/">#VolunteersofSFU</a>
+                </p>
             </div>
 
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid rounded" src="img/sfu/presidents.jpg">
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col-xl-6 mb-3">
                         <img class="img-fluid rounded" src="img/sfu/slogan.png">
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-6 mt-3">
+                    <div class="col-xl-6 mb-3">
+                        <img class="img-fluid rounded" src="img/sfu/presidents.jpg">
+                    </div>
+
+                    <div class="col-sm-6 hidden-sm-down">
                         <img class="img-fluid rounded" src="img/sfu/article.jpg">
                     </div>
-                    <div class="col-md-6">
+
+                    <div class="col-sm-6 hidden-sm-down">
                         <img class="img-fluid rounded" src="img/sfu/media-tweet.png">
                     </div>
                 </div>
@@ -255,17 +298,17 @@
     </div>
 </section>
 
-<section class="footer">
+<section class="puff-piece color-section green-hue">
     <div class="container">
-        <h2 class="mb-5">About Me</h2>
+        <div class="puff-piece-image">
+            <img class="img-fluid rounded-circle" src="img/sarah/coffee-drinker-sm.png">
+        </div>
 
         <div class="row">
-            <div class="col-md-6">
-                <img class="img-fluid rounded" src="img/sarah/coffee-drinker.jpg">
-            </div>
-            <div class="col-md-6">
+            <div class="col">
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0">
+                        <i class="fa fa-quote-left fa-3x"></i>
                         I am an insatiable coffee drinker and travel lover, who has fallen in love with the process of
                         coming up with ideas. Writing, developing and creating are my life, extreme organization is just
                         my fun quirk.
@@ -274,6 +317,36 @@
                         <cite>Sarah Campbell</cite>
                     </footer>
                 </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="color-section green-hue">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="social-media list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://ca.linkedin.com/in/sarah-campbell-b9895081">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fa fa-snapchat fa-2x" aria-hidden="true"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/sarah_soup/">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:sarahj.campb@gmail.com">
+                            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </div>
     </div>
